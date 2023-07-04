@@ -1,0 +1,113 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(248, 236, 200);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+img {
+  height: auto;
+}
+
+/* HERO */
+.container {
+  border-radius: 5px;
+  width: 30rem;
+  margin: 2rem auto;
+}
+.container #first-box {
+  background: coral;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.container #first-box > div {
+  margin: 2rem;
+}
+.container #second-box {
+  padding: 1rem;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 5px;
+}
+.container #second-box #second-box-title {
+  margin: 1rem;
+}
+.container #second-box #week-days {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: baseline;
+}
+.container #second-box #week-days li {
+  position: relative;
+  margin: 0 auto;
+  padding: 0.3rem;
+}
+.container #second-box #week-days li .amount {
+  position: absolute;
+  top: -1.25rem;
+  right: 0px;
+  display: none;
+  transition: all 0.2s ease-in;
+}
+.container #second-box #week-days li:hover .amount {
+  display: block;
+}
+.container #line-container {
+  background: white;
+  border: 1px solid white;
+}
+.container #line-container #line {
+  margin: 0.5rem auto;
+  background: rgba(151, 151, 151, 0.493);
+  border-radius: 5px;
+  height: 2px;
+  width: 95%;
+}
+.container #third-box {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container #third-box > div {
+  margin: 2rem;
+}
+.container #third-box #third-box-title p {
+  color: grey;
+}
+.container #third-box #third-box-title h3 {
+  font-size: 2rem;
+}
+.container #third-box #third-box-side #dataP {
+  color: black;
+  font-size: 1.25rem;
+}
+.container #third-box #third-box-side p {
+  color: grey;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}/*# sourceMappingURL=index.css.map */
